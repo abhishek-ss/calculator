@@ -36,7 +36,7 @@ sh "docker push ssabhishek/calculator_1"
 stage("Deploy to staging") {
      steps {
  
-          sh "docker run -d --rm -p 8765:8080 --name calculator_1 ssabhishek/calculator_1"
+          sh "docker run -d -p 8765:8080 --name calculator_1 ssabhishek/calculator_1"
      }
 }
 
