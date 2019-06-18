@@ -40,12 +40,6 @@ stage("Deploy to staging") {
      }
 }
 
-stage("Acceptance test") {
-     steps {
-          sleep 60
-          sh "./acceptance-test.sh"
-     }
-}
      }
   post {
      always {
