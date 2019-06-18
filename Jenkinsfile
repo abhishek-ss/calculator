@@ -43,7 +43,7 @@ stage("Deploy to staging") {
      }
   post {
      always {
-          sh "docker stop calculator_1"
+          echo "Build Success"
      }
 }
 }
